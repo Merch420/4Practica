@@ -1,0 +1,18 @@
+image: maven:3.9.6-eclipse-temurin-17
+
+stages:
+  - test
+
+cache:
+  paths:
+    - .m2/repository
+
+test:
+  stage: test
+  script:
+    - mvn clean test
+  artifacts:
+    when: always
+    paths:
+      - target/surefire-reports/
+      - target/site/jacoco/

@@ -1,0 +1,7 @@
+basePrice: 5
+pricePerKg: 2
+zoneMultiplier:
+  A: 1.0
+  B: 1.5
+  C: 2.0
+expressExtra: 10

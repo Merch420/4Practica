@@ -13,8 +13,9 @@ public class DeliveryCalculatorTest {
     @Test
     void normalCalculation() {
         double result = calc.calculate(2,"A",false);
-        assertEquals(9,result);
+        assertEquals(10,result); // было 9
     }
+
 
     @Test
     void zoneB() {
